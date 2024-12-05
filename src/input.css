@@ -23,3 +23,11 @@ body {
     rgba(23, 23, 26, 0.23) 92.12%
   );
 }
+.bg-hero-gradient {
+  background: linear-gradient(
+    232.96deg,
+    #0e0e10 27.06%,
+    rgba(23, 23, 26, 0.23) 92.12%
+  );
+  border-top-left-radius: 147px;
+}
