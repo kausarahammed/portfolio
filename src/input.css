@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .primary-btn {
+    @apply bg-[#e6aa32] text-black py-2 px-6 text-[15px] font-semibold rounded-full transition-all duration-300 border border-transparent;
+  }
+  .primary-btn:hover {
+    @apply bg-white hover:border-zinc-500 hover:border;
+  }
+}
+body {
+  background: #000;
+}
+.font-montagu-slab {
+  font-family: "Montagu Slab", serif;
+}
+.bg-custom {
+  background: linear-gradient(
+    232.96deg,
+    #0e0e10 27.06%,
+    rgba(23, 23, 26, 0.23) 92.12%
+  );
+}
