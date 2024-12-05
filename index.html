@@ -21,14 +21,12 @@
     <!-- HEADER: START -->
     <header class="container mx-auto px-4 pt-8">
       <!-- NAVBAR START -->
-      <nav
-        class="flex items-center justify-between flex-col md:flex-row lg:flex-row gap-4 mb-5 md:mb-0 lg:mb-0"
-      >
+      <nav class="flex items-center justify-between gap-4 mb-5">
         <a href="/">
           <h1 class="text-2xl font-bold text-white">Enamul</h1>
         </a>
 
-        <ul class="flex items-center gap-8 text-white">
+        <ul class="lg:flex items-center gap-8 text-white md:block hidden">
           <li>
             <a href="#home">Home</a>
           </li>
@@ -44,13 +42,51 @@
           <li>
             <a href="#contact">Contact</a>
           </li>
-          <button class="primary-btn">Buy Now</button>
+          <button class="primary-btn">Download CV</button>
         </ul>
+        <div class="lg:hidden md:hidden block">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 10H7"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M21 6H3"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M21 14H3"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M21 18H7"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
       </nav>
       <!-- NAVBAR END -->
       <!-- HERO SECTION START -->
       <section
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:justify-items-end items-center h-[80vh] gap-4"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:justify-items-end items-center lg:h-[80vh] h-screen gap-4 mt-20 md:mt-0 lg:mt-0"
       >
         <div class="space-y-3 text-white">
           <span>Web Developer</span>
@@ -66,10 +102,27 @@
             includes responsive design, UI/UX principles, and collaborating with
             clients to bring their visions to life.
           </p>
-          <button class="primary-btn">Let’s Connect</button>
+          <div class="flex items-center gap-3">
+            <button class="primary-btn">Let’s Connect</button>
+            <button class="flex items-center gap-2">
+              <span>View Portfolio</span>
+              <svg
+                width="32"
+                height="15"
+                viewBox="0 0 32 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M31.4102 8.26106C31.8008 7.87054 31.8008 7.23737 31.4102 6.84685L25.0463 0.482887C24.6557 0.0923629 24.0226 0.0923629 23.6321 0.482887C23.2415 0.873412 23.2415 1.50658 23.6321 1.8971L29.2889 7.55396L23.6321 13.2108C23.2415 13.6013 23.2415 14.2345 23.6321 14.625C24.0226 15.0155 24.6557 15.0155 25.0463 14.625L31.4102 8.26106ZM0.375 8.55396H30.7031V6.55396H0.375V8.55396Z"
+                  fill="#FDFDFD"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
         <div>
-          <img src="./images/enamul.png" alt="" />
+          <img src="./images/enamul.png" alt="" class="bg-custom" />
         </div>
       </section>
       <!-- HERO SECTION END -->
@@ -91,7 +144,9 @@
         </div>
         <!-- specialities CARD -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-16 gap-8">
-          <div class="px-5 py-8 text-center rounded-xl space-y-2 bg-custom">
+          <div
+            class="px-5 py-8 text-center rounded-xl space-y-2 bg-custom transition-transform duration-300 ease-in-out hover:scale-105"
+          >
             <div class="flex items-center justify-center">
               <svg
                 width="59"
@@ -243,7 +298,9 @@
               amet sint. Velit officia consequat duis enim velit mollit.
             </p>
           </div>
-          <div class="px-5 py-8 text-center rounded-xl space-y-2 bg-custom">
+          <div
+            class="px-5 py-8 text-center rounded-xl space-y-2 bg-custom transition-transform duration-300 ease-in-out hover:scale-105"
+          >
             <div class="flex items-center justify-center">
               <svg
                 width="63"
@@ -300,7 +357,9 @@
               amet sint. Velit officia consequat duis enim velit mollit.
             </p>
           </div>
-          <div class="px-5 py-8 text-center rounded-xl space-y-2 bg-custom">
+          <div
+            class="px-5 py-8 text-center rounded-xl space-y-2 bg-custom transition-transform duration-300 ease-in-out hover:scale-105"
+          >
             <div class="flex items-center justify-center">
               <svg
                 width="61"
@@ -441,7 +500,9 @@
               amet sint. Velit officia consequat duis enim velit mollit.
             </p>
           </div>
-          <div class="px-5 py-8 text-center rounded-xl space-y-2 bg-custom">
+          <div
+            class="px-5 py-8 text-center rounded-xl space-y-2 bg-custom transition-transform duration-300 ease-in-out hover:scale-105"
+          >
             <div class="flex items-center justify-center">
               <svg
                 width="65"
@@ -588,7 +649,9 @@
               amet sint. Velit officia consequat duis enim velit mollit.
             </p>
           </div>
-          <div class="px-5 py-8 text-center rounded-xl space-y-2 bg-custom">
+          <div
+            class="px-5 py-8 text-center rounded-xl space-y-2 bg-custom transition-transform duration-300 ease-in-out hover:scale-105"
+          >
             <div class="flex items-center justify-center">
               <svg
                 width="65"
@@ -695,7 +758,9 @@
               amet sint. Velit officia consequat duis enim velit mollit.
             </p>
           </div>
-          <div class="px-5 py-8 text-center rounded-xl space-y-2 bg-custom">
+          <div
+            class="px-5 py-8 text-center rounded-xl space-y-2 bg-custom transition-transform duration-300 ease-in-out hover:scale-105"
+          >
             <div class="flex items-center justify-center">
               <svg
                 width="61"
@@ -783,7 +848,9 @@
               amet sint. Velit officia consequat duis enim velit mollit.
             </p>
           </div>
-          <div class="px-5 py-8 text-center rounded-xl space-y-2 bg-custom">
+          <div
+            class="px-5 py-8 text-center rounded-xl space-y-2 bg-custom transition-transform duration-300 ease-in-out hover:scale-105"
+          >
             <div class="flex items-center justify-center">
               <svg
                 width="61"
@@ -903,7 +970,9 @@
               amet sint. Velit officia consequat duis enim velit mollit.
             </p>
           </div>
-          <div class="px-5 py-8 text-center rounded-xl space-y-2 bg-custom">
+          <div
+            class="px-5 py-8 text-center rounded-xl space-y-2 bg-custom transition-transform duration-300 ease-in-out hover:scale-105"
+          >
             <div class="flex items-center justify-center">
               <svg
                 width="61"
@@ -1103,36 +1172,156 @@
         </div>
         <!-- WORKS CARD -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 gap-5">
-          <img
-            src="./images/project-1.jpg"
-            alt=""
-            class="cursor-pointer w-full"
-          />
-          <img
-            src="./images/project-2.png"
-            alt=""
-            class="cursor-pointer w-full"
-          />
-          <img
-            src="./images/project-3.png"
-            alt=""
-            class="cursor-pointer w-full"
-          />
-          <img
-            src="./images/project-4.png"
-            alt=""
-            class="cursor-pointer w-full"
-          />
-          <img
-            src="./images/project-5.png"
-            alt=""
-            class="cursor-pointer w-full"
-          />
-          <img
-            src="./images/project-6.jpg"
-            alt=""
-            class="cursor-pointer w-full"
-          />
+          <div class="relative group overflow-hidden cursor-pointer">
+            <img
+              src="./images/project-1.jpg"
+              alt=""
+              class="cursor-pointer w-full transform transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <div class="flex items-center gap-5">
+                <a href="#">
+                  <button class="primary-btn text-white hover:text-black">
+                    Website
+                  </button>
+                </a>
+                <a href="#">
+                  <button
+                    class="primary-btn bg-transparent border text-white border-gray-300 hover:bg-primary-accent-400"
+                  >
+                    Source Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="relative group overflow-hidden cursor-pointer">
+            <img
+              src="./images/project-2.png"
+              alt=""
+              class="cursor-pointer w-full transform transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <div class="flex items-center gap-5">
+                <a href="#">
+                  <button class="primary-btn text-white hover:text-black">
+                    Website
+                  </button>
+                </a>
+                <a href="#">
+                  <button
+                    class="primary-btn bg-transparent border text-white border-gray-300 hover:bg-primary-accent-400"
+                  >
+                    Source Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="relative group overflow-hidden cursor-pointer">
+            <img
+              src="./images/project-3.png"
+              alt=""
+              class="cursor-pointer w-full transform transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <div class="flex items-center gap-5">
+                <a href="#">
+                  <button class="primary-btn text-white hover:text-black">
+                    Website
+                  </button>
+                </a>
+                <a href="#">
+                  <button
+                    class="primary-btn bg-transparent border text-white border-gray-300 hover:bg-primary-accent-400"
+                  >
+                    Source Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="relative group overflow-hidden cursor-pointer">
+            <img
+              src="./images/project-4.png"
+              alt=""
+              class="cursor-pointer w-full transform transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <div class="flex items-center gap-5">
+                <a href="#">
+                  <button class="primary-btn text-white hover:text-black">
+                    Website
+                  </button>
+                </a>
+                <a href="#">
+                  <button
+                    class="primary-btn bg-transparent border text-white border-gray-300 hover:bg-primary-accent-400"
+                  >
+                    Source Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="relative group overflow-hidden cursor-pointer">
+            <img
+              src="./images/project-5.png"
+              alt=""
+              class="cursor-pointer w-full transform transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <div class="flex items-center gap-5">
+                <a href="#">
+                  <button class="primary-btn text-white hover:text-black">
+                    Website
+                  </button>
+                </a>
+                <a href="#">
+                  <button
+                    class="primary-btn bg-transparent border text-white border-gray-300 hover:bg-primary-accent-400"
+                  >
+                    Source Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="relative group overflow-hidden cursor-pointer">
+            <img
+              src="./images/project-6.jpg"
+              alt=""
+              class="cursor-pointer w-full transform transition-transform duration-300 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+            >
+              <div class="flex items-center gap-5">
+                <a href="#">
+                  <button class="primary-btn text-white hover:text-black">
+                    Website
+                  </button>
+                </a>
+                <a href="#">
+                  <button
+                    class="primary-btn bg-transparent border text-white border-gray-300 hover:bg-primary-accent-400"
+                  >
+                    Source Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- RECENT WORK SECTION END -->
@@ -1154,7 +1343,7 @@
           class="grid grid-cols-1 md:grid-cols-2 items-center lg:grid-cols-4 mt-16 gap-5"
         >
           <div
-            class="px-4 py-8 text-center rounded-xl bg-custom space-y-2 border-[#1C1C21] border"
+            class="px-4 py-8 text-center rounded-xl bg-custom space-y-2 border-[#1C1C21] border transition-transform duration-300 ease-in-out hover:scale-105"
           >
             <h4 class="font-semibold text-lg text-white">
               Website Development
@@ -1165,7 +1354,7 @@
             </p>
           </div>
           <div
-            class="px-4 py-8 text-center rounded-xl bg-custom space-y-2 border-[#1C1C21] border"
+            class="px-4 py-8 text-center rounded-xl bg-custom space-y-2 border-[#1C1C21] border transition-transform duration-300 ease-in-out hover:scale-105"
           >
             <h4 class="font-semibold text-lg text-white">
               E-Commerce Development
@@ -1176,7 +1365,7 @@
             </p>
           </div>
           <div
-            class="px-4 py-8 text-center rounded-xl bg-custom space-y-2 border-[#1C1C21] border"
+            class="px-4 py-8 text-center rounded-xl bg-custom space-y-2 border-[#1C1C21] border transition-transform duration-300 ease-in-out hover:scale-105"
           >
             <h4 class="font-semibold text-lg text-white">
               Web App Development
@@ -1187,7 +1376,7 @@
             </p>
           </div>
           <div
-            class="px-4 py-8 text-center rounded-xl bg-custom space-y-2 border-[#1C1C21] border"
+            class="px-4 py-8 text-center rounded-xl bg-custom space-y-2 border-[#1C1C21] border transition-transform duration-300 ease-in-out hover:scale-105"
           >
             <h4 class="font-semibold text-lg text-white">
               API Dev. & Integration
@@ -1198,7 +1387,7 @@
             </p>
           </div>
           <div
-            class="px-4 py-8 text-center rounded-xl bg-custom space-y-2 border-[#1C1C21] border"
+            class="px-4 py-8 text-center rounded-xl bg-custom space-y-2 border-[#1C1C21] border transition-transform duration-300 ease-in-out hover:scale-105"
           >
             <h4 class="font-semibold text-lg text-white">
               Cloud-Based Solutions
@@ -1209,7 +1398,7 @@
             </p>
           </div>
           <div
-            class="px-4 py-8 text-center rounded-xl bg-custom space-y-2 border-[#1C1C21] border"
+            class="px-4 py-8 text-center rounded-xl bg-custom space-y-2 border-[#1C1C21] border transition-transform duration-300 ease-in-out hover:scale-105"
           >
             <h4 class="font-semibold text-lg text-white">
               Web Perform. Optimization
@@ -1220,7 +1409,7 @@
             </p>
           </div>
           <div
-            class="px-4 py-8 text-center rounded-xl bg-custom space-y-2 border-[#1C1C21] border"
+            class="px-4 py-8 text-center rounded-xl bg-custom space-y-2 border-[#1C1C21] border transition-transform duration-300 ease-in-out hover:scale-105"
           >
             <h4 class="font-semibold text-lg text-white">(SEO) Services</h4>
             <p class="text-secondary-accent-400">
@@ -1229,7 +1418,7 @@
             </p>
           </div>
           <div
-            class="px-4 py-8 text-center rounded-xl bg-custom space-y-2 border-[#1C1C21] border"
+            class="px-4 py-8 text-center rounded-xl bg-custom space-y-2 border-[#1C1C21] border transition-transform duration-300 ease-in-out hover:scale-105"
           >
             <h4 class="font-semibold text-lg text-white">
               Website Maint. & Support
@@ -1424,14 +1613,70 @@
       <!-- FAQ SECTION END -->
     </main>
     <!-- FOOTER SECTION START -->
-    <footer class=p-20">
-      <section class="container mx-auto px-4">
-        <div class="flex items-center justify-between flex-col gap-6">
-           <div>
-            <h4 class="uppercase">Solutions</h4>
-           </div>
+    <footer>
+      <div class="border-t border-[#1C1C21]"></div>
+      <section class="container mx-auto p-20">
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 justify-items-center"
+        >
+          <div>
+            <h4 class="uppercase text-secondary-accent-400 mb-2">Solutions</h4>
+            <ul class="uppercase space-y-2 text-[#F2F2F3]">
+              <li class="border-b border-[#1C1C21]">Glintopia</li>
+              <li class="border-b border-[#1C1C21]">Fable’s</li>
+              <li class="border-b border-[#1C1C21]">Fluxway</li>
+              <li class="border-b border-[#1C1C21]">PowerCore</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="uppercase text-secondary-accent-400 mb-2">Solutions</h4>
+            <ul class="uppercase space-y-2 text-[#F2F2F3]">
+              <li class="border-b border-[#1C1C21]">Glintopia</li>
+              <li class="border-b border-[#1C1C21]">Fable’s</li>
+              <li class="border-b border-[#1C1C21]">Fluxway</li>
+              <li class="border-b border-[#1C1C21]">PowerCore</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="uppercase text-secondary-accent-400 mb-2">Solutions</h4>
+            <ul class="uppercase space-y-2 text-[#F2F2F3]">
+              <li class="border-b border-[#1C1C21]">Glintopia</li>
+              <li class="border-b border-[#1C1C21]">Fable’s</li>
+              <li class="border-b border-[#1C1C21]">Fluxway</li>
+              <li class="border-b border-[#1C1C21]">PowerCore</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="uppercase text-secondary-accent-400 mb-2">Solutions</h4>
+            <ul class="uppercase space-y-2 text-[#F2F2F3]">
+              <li class="border-b border-[#1C1C21]">Glintopia</li>
+              <li class="border-b border-[#1C1C21]">Fable’s</li>
+              <li class="border-b border-[#1C1C21]">Fluxway</li>
+              <li class="border-b border-[#1C1C21]">PowerCore</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="uppercase text-secondary-accent-400 mb-2">Solutions</h4>
+            <ul class="uppercase space-y-2 text-[#F2F2F3]">
+              <li class="border-b border-[#1C1C21]">Glintopia</li>
+              <li class="border-b border-[#1C1C21]">Fable’s</li>
+              <li class="border-b border-[#1C1C21]">Fluxway</li>
+            </ul>
+          </div>
         </div>
       </section>
+      <div class="border-t border-[#1C1C21]"></div>
+      <div class="container py-8">
+        <div class="flex items-center justify-between text-[#797C86]">
+          <div>
+            <span class="border-r border-[#1C1C21]">Terms & Conditions</span>
+            <span>Privacy Policy</span>
+          </div>
+          <div>
+            <p>© 2024 All rights reserved.</p>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- FOOTER SECTION END -->
   </body>
