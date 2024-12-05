@@ -23,7 +23,7 @@ To run and develop this project, ensure you have the following installed:
 
    ```bash
    git clone https://github.com/kawsarkabir/portfolio-assignment-2-ph-bootcamp.git
-   cd portfolio-assignment
+   cd portfolio-assignment-2-ph-bootcamp
    ```
 
 2. Install the dependencies:
@@ -44,7 +44,7 @@ To run and develop this project, ensure you have the following installed:
 ## Folder Structure
 
 ```
-portfolio-assignment/
+portfolio-assignment-2-ph-bootcamp/
 ├── src/
 │   └── input.css     # TailwindCSS source file
 ├── dist/
