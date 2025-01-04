@@ -22,11 +22,13 @@
   <!-- HEADER: START -->
   <header class="container mx-auto px-4 pt-8">
     <!-- NAVBAR START -->
-    <nav class="flex items-center justify-between gap-4 mb-5">
+    <nav class="flex sticky top-0 items-center justify-between gap-4 mb-5" style="background-color: rgba(0, 0, 0, 0.5); padding: 10px 20px;">
       <a href="/">
-        <h1 class="text-2xl font-bold text-white">Kausar</h1>
+        <div>
+          <img src="./images/logo.png" alt="Logo" style="width: 120px; background: linear-gradient(to right, #ff7e5f, #feb47b);" />
+        </div>
       </a>
-
+      
       <ul class="lg:flex items-center gap-8 text-white md:flex hidden">
         <li>
           <a href="#home">Home</a>
@@ -43,13 +45,12 @@
         <li>
           <a href="#contact">Contact</a>
         </li>
-
-        <a href="https://docs.google.com/document/d/1vYRX1Ud2WNXjNwHDqgYIji8Ubt0xAUyfsEs9KVNalII/edit?usp=sharing"
-          target="_blank">
+    
+        <a href="https://docs.google.com/document/d/1vYRX1Ud2WNXjNwHDqgYIji8Ubt0xAUyfsEs9KVNalII/edit?usp=sharing" target="_blank">
           <button class="primary-btn">Download CV</button>
         </a>
-
       </ul>
+    
       <div class="lg:hidden md:hidden block">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M21 10H7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -59,6 +60,8 @@
         </svg>
       </div>
     </nav>
+    
+    
     <!-- NAVBAR END -->
     <!-- HERO SECTION START -->
     <section
@@ -115,7 +118,7 @@
   <!-- HEADER: END -->
   <main class="container mx-auto px-4">
     <!-- SPECIALITIES SECTION START -->
-    <section class="py-16 lg:py-20">
+  <section class="py-16 lg:py-20">
       <div class="w-full md:w-2/3 lg:w-2/3 mx-auto text-center space-y-2">
         <span class="text-secondary-accent-400">Specialities</span>
         <h1 class="text-3xl font-semibold text-white uppercase">
@@ -462,8 +465,90 @@
         </div>
 
       </div>
-    </section>
+   </section> 
     <!-- SPECIALITIES SECTION END -->
+
+<!--  slike-->
+<div style="border: 1px solid #5C2E91; border-radius: 10px; padding: 20px; width: 100%; max-width: 100%; background: linear-gradient(145deg, rgba(106, 95, 126, 0.8), rgba(94, 86, 102, 0.8));">
+  <h2 style="text-align: center; margin-bottom: 20px; font-size: 24px; color: #A67FF0;">Frontend</h2>
+  <div style="display: grid;  grid-template-columns: repeat(4, 1fr); gap: 10px;">
+    
+    <!-- JavaScript -->
+    <div style="text-align: center;">
+      <div style="background-color: #000; border-radius: 8px; padding: 15px; display: inline-block;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" style="width: 50px; height: 50px;">
+      </div>
+      <p style="margin-top: 10px; font-size: 14px; color: #EFD81D;">JavaScript</p>
+    </div>
+
+    <!-- TypeScript -->
+    <div style="text-align: center;">
+      <div style="background-color: #000; border-radius: 8px; padding: 15px; display: inline-block;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="TypeScript" style="width: 50px; height: 50px;">
+      </div>
+      <p style="margin-top: 10px; font-size: 14px; color: #2F74C0;">TypeScript</p>
+    </div>
+
+    <!-- React -->
+    <div style="text-align: center;">
+      <div style="background-color: #000; border-radius: 8px; padding: 15px; display: inline-block;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" style="width: 50px; height: 50px;">
+      </div>
+      <p style="margin-top: 10px; font-size: 14px; color: #61DAFB;">React</p>
+    </div>
+
+    <!-- Redux -->
+    <div style="text-align: center;">
+      <div style="background-color: #000; border-radius: 8px; padding: 15px; display: inline-block;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png" alt="Redux" style="width: 50px; height: 50px;">
+      </div>
+      <p style="margin-top: 10px; font-size: 14px; color: #764ABC;">Redux</p>
+    </div>
+
+    <!-- Tailwind -->
+    <div style="text-align: center;">
+      <div style="background-color: #000; border-radius: 8px; padding: 15px; display: inline-block;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind" style="width: 50px; height: 50px;">
+      </div>
+      <p style="margin-top: 10px; font-size: 14px; color: #38B2AC;">Tailwind</p>
+    </div>
+
+    <!-- Material UI -->
+    <div style="text-align: center;">
+      <div style="background-color: #000; border-radius: 8px; padding: 15px; display: inline-block;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Material_design_logo.svg" alt="Material UI" style="width: 50px; height: 50px;">
+      </div>
+      <p style="margin-top: 10px; font-size: 14px; color: #0081CB;">Material UI</p>
+    </div>
+
+    <!-- Sass -->
+    <div style="text-align: center;">
+      <div style="background-color: #000; border-radius: 8px; padding: 15px; display: inline-block;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt="Sass" style="width: 50px; height: 50px;">
+      </div>
+      <p style="margin-top: 10px; font-size: 14px; color: #CC6699;">Sass</p>
+    </div>
+
+    <!-- CSS3 -->
+    <div style="text-align: center;">
+      <div style="background-color: #000; border-radius: 8px; padding: 15px; display: inline-block;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS3" style="width: 50px; height: 50px;">
+      </div>
+      <p style="margin-top: 10px; font-size: 14px; color: #1572B6;">CSS3</p>
+    </div>
+
+    <!-- HTML5 -->
+    <div style="text-align: center;">
+      <div style="background-color: #000; border-radius: 8px; padding: 15px; display: inline-block;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5" style="width: 50px; height: 50px;">
+      </div>
+      <p style="margin-top: 10px; font-size: 14px; color: #E34F26;">HTML5</p>
+    </div>
+
+  </div>
+</div>
+
+
     <!-- RECENT WORK SECTION START -->
     <section class="py-16 lg:py-20">
       <div class="w-full md:w-2/3 lg:w-2/3 mx-auto text-center space-y-2">
@@ -602,11 +687,52 @@
       </div>
     </section>
     <!-- SPECIALITIES SECTION END -->
-    <!-- FAQ SECTION START -->
+    <!-- Contact Us -->
     <section>
+      <div style="padding: 30px; border: 2px solid #181d22; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 50px auto; max-width: 1200px; border-radius: 10px; text-align:center;">
+          <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; align-items: center;">
+              <!-- Form Section -->
+            
+                  <form>
+                    
+                    <input type="email" placeholder="Email" required style="width: 100%;  padding: 10px; border: 1px solid #6c63ff; border-radius: 5px; background-color: #1a1a2e; color: #fff; outline: none;" />
+                    <textarea placeholder="Message" rows="5" required style="width: 100%; margin-top: 20px;  padding: 10px; border: 1px solid #6c63ff; border-radius: 5px; background-color: #1a1a2e; color: #fff; outline: none;"></textarea>
+                    <button type="submit" style="padding: 10px; margin-top: 20px;  width: 100%;  border: none; border-radius: 5px; background: linear-gradient(90deg, #6c63ff, #b57aff); color: #fff; font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px; transition: background 0.3s;">
+                      <span style="font-size: 18px;">✈️</span> SEND
+                    </button>
+                  </form>
+             
+              <!-- Info Section -->
+              <div style="flex: 1; min-width: 300px; max-width: 48%;">
+                  <!-- Location Section -->
+                  <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                      <i class="fa-solid fa-location-dot" style="font-size: 24px; color: #007BFF;"></i>
+                      <p style="color: #555555; font-size: 16px; margin: 0;">Dhaka, Mymensingh , Bangladesh </p>
+                  </div>
+  
+                  <!-- Phone Section -->
+                  <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                      <i class="fa-solid fa-phone" style="font-size: 24px; color: #007BFF;"></i>
+                      <p style="color: #555555; font-size: 16px; margin: 0;">+880 1627768497</p>
+                  </div>
+  
+                  <!-- Email Section -->
+                  <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                      <i class="fa-solid fa-envelope" style="font-size: 24px; color: #007BFF;"></i>
+                      <p style="color: #555555; font-size: 16px; margin: 0;">kausa.a.pro@gmail.com</p>
+                  </div>
+                  
+             
 
-    </section>
-    <!-- FAQ SECTION END -->
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  
+  
+
+    <!-- Contact Us END -->
   </main>
   <!-- FOOTER SECTION START -->
   <footer>
@@ -675,6 +801,7 @@
     </div>
   </footer>
   <!-- FOOTER SECTION END -->
+  
 </body>
 
 </html>
